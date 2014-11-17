@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7102C9
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{BEAC2DD0-A97D-48D6-8480-4ECE473915DA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BEAC2DD0-A97D-48D6-8480-4ECE473915DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.databases.ravendb", "polymer.databases.ravendb\polymer.databases.ravendb.csproj", "{7429DAF9-30A3-41C7-A306-37CB236D0131}"
 EndProject
@@ -29,17 +29,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.api.servicestack", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.orchestration.zeromq", "polymer.orchestration.zeromq\polymer.orchestration.zeromq.csproj", "{E0B2CB5B-065E-456D-87FC-57500B759184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.concepts", "..\specs\polymer.specs.concepts\polymer.specs.concepts.csproj", "{65FFEC90-507A-4281-8123-8E6837051E09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.concepts", "..\tests\polymer.tests.concepts\polymer.tests.concepts.csproj", "{65FFEC90-507A-4281-8123-8E6837051E09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.core", "..\specs\polymer.specs.core\polymer.specs.core.csproj", "{D69EA11A-6482-4A3C-9FB6-23450E4A6810}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.core", "..\tests\polymer.tests.core\polymer.tests.core.csproj", "{D69EA11A-6482-4A3C-9FB6-23450E4A6810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.ravendb", "..\specs\polymer.specs.ravendb\polymer.specs.ravendb.csproj", "{3C13E5DB-7C83-494D-AC06-CC2C3A286625}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.ravendb", "..\tests\polymer.tests.ravendb\polymer.tests.ravendb.csproj", "{3C13E5DB-7C83-494D-AC06-CC2C3A286625}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.servicestack", "..\specs\polymer.specs.servicestack\polymer.specs.servicestack.csproj", "{5AE29009-3199-4FD4-9552-9E25625E9487}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.servicestack", "..\tests\polymer.tests.servicestack\polymer.tests.servicestack.csproj", "{5AE29009-3199-4FD4-9552-9E25625E9487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.simpleinjector", "..\specs\polymer.specs.simpleinjector\polymer.specs.simpleinjector.csproj", "{593F9A51-3859-467A-8233-197C32AAD1D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.simpleinjector", "..\tests\polymer.tests.simpleinjector\polymer.tests.simpleinjector.csproj", "{593F9A51-3859-467A-8233-197C32AAD1D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.zeromq", "..\specs\polymer.specs.zeromq\polymer.specs.zeromq.csproj", "{3BBC961E-AB5E-4027-8322-31152E4E8404}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.zeromq", "..\tests\polymer.tests.zeromq\polymer.tests.zeromq.csproj", "{3BBC961E-AB5E-4027-8322-31152E4E8404}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
