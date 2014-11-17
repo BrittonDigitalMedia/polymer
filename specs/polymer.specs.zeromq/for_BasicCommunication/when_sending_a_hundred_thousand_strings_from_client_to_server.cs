@@ -41,8 +41,8 @@ namespace polymer.specs.zeromq.for_BasicCommunication
 			}
 		};
 
-		It should_receive_1000_messages_on_the_server = () => _messagesReceivedAtServer.Count.ShouldEqual(100000);
-		It should_receive_1000_responses_on_the_client = () => _responsesReceivedByClient.Count.ShouldEqual(100000);
+		It should_receive_1000_messages_on_the_server = () => _messagesReceivedAtServer.Count.ShouldEqual(1000);
+		It should_receive_1000_responses_on_the_client = () => _responsesReceivedByClient.Count.ShouldEqual(1000);
 		It should_complete_in_less_than_a_second = () => _stopwatch.ElapsedMilliseconds.ShouldBeLessThan(1000);
 
 		private static string _message;
