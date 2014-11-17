@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29E865AA-519B-48F3-8078-3CBEC279E546}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>polymer.core</RootNamespace>
+    <AssemblyName>polymer.core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Geo">
+      <HintPath>..\packages\Geo.0.12.1\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Geo.dll</HintPath>
+    </Reference>
+    <Reference Include="NodaTime">
+      <HintPath>..\packages\NodaTime.1.3.0\lib\net35-Client\NodaTime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnitsNet">
+      <HintPath>..\packages\UnitsNet.3.2.0\lib\net35\UnitsNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commanding.Logging\CommandLogRecord.cs" />
+    <Compile Include="Commanding\CommandException.cs" />
+    <Compile Include="Commanding\ICommand.cs" />
+    <Compile Include="Commanding\ICommandHandler.cs" />
+    <Compile Include="Commanding\ICommandHandlerFactory.cs" />
+    <Compile Include="Commanding\ICommandResult.cs" />
+    <Compile Include="Commanding\ICommandRouter.cs" />
+    <Compile Include="Commanding\VoidResult.cs" />
+    <Compile Include="Composition\IContainer.cs" />
+    <Compile Include="Composition\IRunAtStartUp.cs" />
+    <Compile Include="Composition\ObjectLifespan.cs" />
+    <Compile Include="Database\IDatabaseContext.cs" />
+    <Compile Include="Database\IDatabaseJob.cs" />
+    <Compile Include="Database\IDatabaseJobFactory.cs" />
+    <Compile Include="Database\IUnitOfWork.cs" />
+    <Compile Include="Domain\CombGuidKeyGenerator.cs" />
+    <Compile Include="Domain\EntityNotFoundException.cs" />
+    <Compile Include="Domain\IEntity.cs" />
+    <Compile Include="Domain\IEntityFactory.cs" />
+    <Compile Include="Domain\IKeyGenerator.cs" />
+    <Compile Include="Domain\ValueObject .cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Events\IEventPublisher.cs" />
+    <Compile Include="Geospatial\IGeoPoint.cs" />
+    <Compile Include="Guids\GuidExtensions.cs" />
+    <Compile Include="Guids\SequentialGuid.cs" />
+    <Compile Include="Commanding.Logging\CommandHandlerLoggingDecorator.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILogRecord.cs" />
+    <Compile Include="Logging\LogLevel.cs" />
+    <Compile Include="Logging\LogType.cs" />
+    <Compile Include="Modularisation\IInitialise.cs" />
+    <Compile Include="Modularisation\IModuleContext.cs" />
+    <Compile Include="Notifications\INotification.cs" />
+    <Compile Include="Notifications\INotificationPublisher.cs" />
+    <Compile Include="Orchestration\IHub.cs" />
+    <Compile Include="Orchestration\IWorker.cs" />
+    <Compile Include="Orchestration\Node.cs" />
+    <Compile Include="Orchestration\NodeType.cs" />
+    <Compile Include="Persistence\IPersistenceManager.cs" />
+    <Compile Include="Persistence\IPersistenceManagerProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\IUserSession.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

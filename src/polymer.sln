@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{5037F580-1EAB-446D-BA79-DDAEB47E4337}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{0E0A5253-0036-4360-8266-FC285BDC19CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.core", "polymer.core\polymer.core.csproj", "{29E865AA-519B-48F3-8078-3CBEC279E546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.concepts", "polymer.concepts\polymer.concepts.csproj", "{55F1D5C0-7709-444A-B65E-0D5C3065826A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7102C900-0383-4EE2-9432-C600A80238E1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{BEAC2DD0-A97D-48D6-8480-4ECE473915DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.databases.ravendb", "polymer.databases.ravendb\polymer.databases.ravendb.csproj", "{7429DAF9-30A3-41C7-A306-37CB236D0131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.composition.simpleinjector", "polymer.composition.simpleinjector\polymer.composition.simpleinjector.csproj", "{354668E4-5F2E-46D7-A854-0E685EB6DC04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.concepts", "..\specs\polymer.specs.concepts\polymer.specs.concepts.csproj", "{65FFEC90-507A-4281-8123-8E6837051E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.core", "..\specs\polymer.specs.core\polymer.specs.core.csproj", "{D69EA11A-6482-4A3C-9FB6-23450E4A6810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.ravendb", "..\specs\polymer.specs.ravendb\polymer.specs.ravendb.csproj", "{3C13E5DB-7C83-494D-AC06-CC2C3A286625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.simpleinjector", "..\specs\polymer.specs.simpleinjector\polymer.specs.simpleinjector.csproj", "{593F9A51-3859-467A-8233-197C32AAD1D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.servicestack", "polymer.specs.servicestack\polymer.specs.servicestack.csproj", "{5AE29009-3199-4FD4-9552-9E25625E9487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.api.servicestack", "polymer.api.servicestack\polymer.api.servicestack.csproj", "{4F0C9819-CA07-46C3-89C1-6336DD3CE55F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.orchestration.zeromq", "polymer.orchestration.zeromq\polymer.orchestration.zeromq.csproj", "{E0B2CB5B-065E-456D-87FC-57500B759184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.specs.zeromq", "..\specs\polymer.specs.zeromq\polymer.specs.zeromq.csproj", "{3BBC961E-AB5E-4027-8322-31152E4E8404}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29E865AA-519B-48F3-8078-3CBEC279E546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E865AA-519B-48F3-8078-3CBEC279E546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E865AA-519B-48F3-8078-3CBEC279E546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E865AA-519B-48F3-8078-3CBEC279E546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F1D5C0-7709-444A-B65E-0D5C3065826A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F1D5C0-7709-444A-B65E-0D5C3065826A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F1D5C0-7709-444A-B65E-0D5C3065826A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F1D5C0-7709-444A-B65E-0D5C3065826A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7429DAF9-30A3-41C7-A306-37CB236D0131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7429DAF9-30A3-41C7-A306-37CB236D0131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7429DAF9-30A3-41C7-A306-37CB236D0131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7429DAF9-30A3-41C7-A306-37CB236D0131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354668E4-5F2E-46D7-A854-0E685EB6DC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354668E4-5F2E-46D7-A854-0E685EB6DC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354668E4-5F2E-46D7-A854-0E685EB6DC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354668E4-5F2E-46D7-A854-0E685EB6DC04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FFEC90-507A-4281-8123-8E6837051E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FFEC90-507A-4281-8123-8E6837051E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FFEC90-507A-4281-8123-8E6837051E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FFEC90-507A-4281-8123-8E6837051E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69EA11A-6482-4A3C-9FB6-23450E4A6810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69EA11A-6482-4A3C-9FB6-23450E4A6810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69EA11A-6482-4A3C-9FB6-23450E4A6810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69EA11A-6482-4A3C-9FB6-23450E4A6810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C13E5DB-7C83-494D-AC06-CC2C3A286625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C13E5DB-7C83-494D-AC06-CC2C3A286625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C13E5DB-7C83-494D-AC06-CC2C3A286625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C13E5DB-7C83-494D-AC06-CC2C3A286625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593F9A51-3859-467A-8233-197C32AAD1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593F9A51-3859-467A-8233-197C32AAD1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593F9A51-3859-467A-8233-197C32AAD1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593F9A51-3859-467A-8233-197C32AAD1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE29009-3199-4FD4-9552-9E25625E9487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE29009-3199-4FD4-9552-9E25625E9487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE29009-3199-4FD4-9552-9E25625E9487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE29009-3199-4FD4-9552-9E25625E9487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0C9819-CA07-46C3-89C1-6336DD3CE55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0C9819-CA07-46C3-89C1-6336DD3CE55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0C9819-CA07-46C3-89C1-6336DD3CE55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0C9819-CA07-46C3-89C1-6336DD3CE55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B2CB5B-065E-456D-87FC-57500B759184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B2CB5B-065E-456D-87FC-57500B759184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B2CB5B-065E-456D-87FC-57500B759184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B2CB5B-065E-456D-87FC-57500B759184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29E865AA-519B-48F3-8078-3CBEC279E546} = {5037F580-1EAB-446D-BA79-DDAEB47E4337}
+		{55F1D5C0-7709-444A-B65E-0D5C3065826A} = {5037F580-1EAB-446D-BA79-DDAEB47E4337}
+		{7429DAF9-30A3-41C7-A306-37CB236D0131} = {0E0A5253-0036-4360-8266-FC285BDC19CE}
+		{354668E4-5F2E-46D7-A854-0E685EB6DC04} = {0E0A5253-0036-4360-8266-FC285BDC19CE}
+		{65FFEC90-507A-4281-8123-8E6837051E09} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{D69EA11A-6482-4A3C-9FB6-23450E4A6810} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{3C13E5DB-7C83-494D-AC06-CC2C3A286625} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{593F9A51-3859-467A-8233-197C32AAD1D2} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{5AE29009-3199-4FD4-9552-9E25625E9487} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{4F0C9819-CA07-46C3-89C1-6336DD3CE55F} = {0E0A5253-0036-4360-8266-FC285BDC19CE}
+		{E0B2CB5B-065E-456D-87FC-57500B759184} = {0E0A5253-0036-4360-8266-FC285BDC19CE}
+		{3BBC961E-AB5E-4027-8322-31152E4E8404} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+	EndGlobalSection
+EndGlobal
