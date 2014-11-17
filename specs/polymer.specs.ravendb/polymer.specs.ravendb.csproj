@@ -124,7 +124,6 @@
     <Compile Include="for_Units.Net\given\a_ravendb_index.cs" />
     <Compile Include="for_Units.Net\given\a_valid_database_context.cs" />
     <Compile Include="for_Units.Net\when_saving_an_entity_with_units.cs" />
-    <Compile Include="Infrastructure\Serialization\Raven_DB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="_assets\Entity.cs" />
