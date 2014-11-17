@@ -67,19 +67,23 @@
     </Reference>
     <Reference Include="Raven.Abstractions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3507-Unstable\lib\net45\Raven.Abstractions.dll</HintPath>
+      <HintPath>..\..\src\packages\RavenDB.Client.3.0.3509-Unstable\lib\net45\Raven.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Client.Lightweight">
-      <HintPath>..\packages\RavenDB.Client.3.0.3507-Unstable\lib\net45\Raven.Client.Lightweight.dll</HintPath>
+    <Reference Include="Raven.Client.Lightweight, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\packages\RavenDB.Client.3.0.3509-Unstable\lib\net45\Raven.Client.Lightweight.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Database">
-      <HintPath>..\packages\RavenDB.Database.3.0.3507-Unstable\lib\net45\Raven.Database.dll</HintPath>
+    <Reference Include="Raven.Database, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\packages\RavenDB.Database.3.0.3509-Unstable\lib\net45\Raven.Database.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Server">
-      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3507-Unstable\lib\net45\Raven.Server.exe</HintPath>
+    <Reference Include="Raven.Server, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3509-Unstable\lib\net45\Raven.Server.exe</HintPath>
     </Reference>
-    <Reference Include="Raven.Tests.Helpers">
-      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3507-Unstable\lib\net45\Raven.Tests.Helpers.dll</HintPath>
+    <Reference Include="Raven.Tests.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3509-Unstable\lib\net45\Raven.Tests.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
