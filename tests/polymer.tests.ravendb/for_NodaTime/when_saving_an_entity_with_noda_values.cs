@@ -1,10 +1,10 @@
 ﻿using Machine.Specifications;
 using Moq;
 using NodaTime;
-using polymer.specs.ravendb.for_NodaTime.assets;
+using polymer.tests.ravendb.for_NodaTime.assets;
 using It = Machine.Specifications.It;
 
-namespace polymer.specs.ravendb.for_NodaTime
+namespace polymer.tests.ravendb.for_NodaTime
 {
 	public class when_saving_an_entity_with_noda_values : given.a_valid_database_context
 	{

@@ -7,7 +7,7 @@ using Raven.Client.Extensions;
 using Raven.Database.Config;
 using Raven.Database.Server;
 
-namespace polymer.specs.ravendb.for_Geo.given
+namespace polymer.tests.ravendb.for_Geo.given
 {
 	public class a_valid_database_context
 	{

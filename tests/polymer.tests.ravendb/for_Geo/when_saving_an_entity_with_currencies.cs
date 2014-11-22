@@ -1,10 +1,10 @@
-﻿using Geo.Geometries;
+﻿using System;
+using Geo.Geometries;
 using Machine.Specifications;
-using polymer.specs.ravendb.for_Geo.assets;
-using polymer.specs.ravendb.for_Units.Net.given;
-using System;
+using polymer.tests.ravendb.for_Geo.assets;
+using polymer.tests.ravendb.for_Units.Net.given;
 
-namespace polymer.specs.ravendb.for_Geo
+namespace polymer.tests.ravendb.for_Geo
 {
 	public class when_saving_an_entity_with_geo_info : a_valid_database_context
 	{

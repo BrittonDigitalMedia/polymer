@@ -1,7 +1,7 @@
 ﻿using Machine.Specifications;
-using polymer.specs.simpleinjector.for_SimpleInjectorContainer.assets;
+using polymer.tests.simpleinjector.for_SimpleInjectorContainer.assets;
 
-namespace polymer.specs.simpleinjector.for_SimpleInjectorContainer
+namespace polymer.tests.simpleinjector.for_SimpleInjectorContainer
 {
 	public class when_binding_an_interface_to_a_concrete_type : given.a_composed_container
 	{

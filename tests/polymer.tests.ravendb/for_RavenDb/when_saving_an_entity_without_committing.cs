@@ -1,7 +1,7 @@
 using Machine.Specifications;
-using polymer.specs.ravendb.for_RavenDb.assets;
+using polymer.tests.ravendb.for_RavenDb.assets;
 
-namespace polymer.specs.ravendb.for_RavenDb
+namespace polymer.tests.ravendb.for_RavenDb
 {
 	public class when_saving_an_entity_without_committing : given.a_valid_database_context
 	{

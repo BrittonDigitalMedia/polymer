@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using Machine.Specifications;
 using NetMQ;
-using polymer.specs.zeromq.for_JsonSerialization.assets;
+using polymer.tests.zeromq.for_JsonSerialization.assets;
 using ServiceStack;
 
-namespace polymer.specs.zeromq.for_JsonSerialization
+namespace polymer.tests.zeromq.for_JsonSerialization
 {
 	public class when_sending_an_object_between_client_and_server
 	{

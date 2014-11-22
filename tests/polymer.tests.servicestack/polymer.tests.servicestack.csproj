@@ -58,6 +58,18 @@
     <Reference Include="Moq">
       <HintPath>..\..\src\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="NMoneys">
+      <HintPath>..\..\src\packages\NMoneys.3.5.1.0\lib\Net20-client\NMoneys.dll</HintPath>
+    </Reference>
+    <Reference Include="NodaTime">
+      <HintPath>..\..\src\packages\NodaTime.1.3.0\lib\net35-Client\NodaTime.dll</HintPath>
+    </Reference>
+    <Reference Include="NodaTime.Serialization.ServiceStackText">
+      <HintPath>..\..\src\packages\NodaTime.Serialization.ServiceStackText.1.2.17\lib\net35-Client\NodaTime.Serialization.ServiceStackText.dll</HintPath>
+    </Reference>
+    <Reference Include="RedisIntegration">
+      <HintPath>..\..\src\packages\RedisIntegration.0.3.0.0\lib\net40\RedisIntegration.dll</HintPath>
+    </Reference>
     <Reference Include="ServiceStack, Version=4.0.33.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\src\packages\ServiceStack.4.0.33\lib\net40\ServiceStack.dll</HintPath>
@@ -78,7 +90,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\src\packages\ServiceStack.Text.4.0.33\lib\net40\ServiceStack.Text.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInjector">
+      <HintPath>..\..\src\packages\SimpleInjector.2.6.1\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Diagnostics">
+      <HintPath>..\..\src\packages\SimpleInjector.2.6.1\lib\net45\SimpleInjector.Diagnostics.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -93,13 +113,37 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AssemblyContext.cs" />
+    <Compile Include="for_Basic_Service_Interactions\assets\FakeRequest.cs" />
+    <Compile Include="for_Basic_Service_Interactions\assets\FakeResponse.cs" />
+    <Compile Include="for_Basic_Service_Interactions\assets\FakeService.cs" />
+    <Compile Include="for_Basic_Service_Interactions\given\a_service_stack_host.cs" />
+    <Compile Include="for_Basic_Service_Interactions\when_interacting_with_a_basic_service.cs" />
+    <Compile Include="for_ServerSent_Events\assets\FakeSseRequest.cs" />
+    <Compile Include="for_ServerSent_Events\assets\FakeSseResponse.cs" />
+    <Compile Include="for_ServerSent_Events\assets\FakeSseService.cs" />
+    <Compile Include="for_ServerSent_Events\given\a_service_stack_host.cs" />
+    <Compile Include="for_ServerSent_Events\when_sending_a_server_sent_event.cs" />
+    <Compile Include="for_ServerSent_Events\when_sending_a_thousand_server_sent_events.cs" />
+    <Compile Include="Infrastructure\Serialization\Service_Stack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="for_NodaTime\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\polymer.api.servicestack.simpleinjector\polymer.api.servicestack.simpleinjector.csproj">
+      <Project>{C36580C3-0D61-4E7C-A93C-11163BB98EE3}</Project>
+      <Name>polymer.api.servicestack.simpleinjector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\polymer.api.servicestack\polymer.api.servicestack.csproj">
+      <Project>{4F0C9819-CA07-46C3-89C1-6336DD3CE55F}</Project>
+      <Name>polymer.api.servicestack</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

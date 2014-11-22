@@ -1,8 +1,8 @@
-﻿using Machine.Specifications;
+﻿using System.Diagnostics;
+using Machine.Specifications;
 using NetMQ;
-using System.Diagnostics;
 
-namespace polymer.specs.zeromq.for_BasicCommunication
+namespace polymer.tests.zeromq.for_BasicCommunication
 {
 	public class when_sending_a_string_from_client_to_server
 	{

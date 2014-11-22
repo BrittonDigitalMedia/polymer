@@ -4,7 +4,7 @@ using Raven.Client.Embedded;
 using Raven.Client.Extensions;
 using Raven.Database.Config;
 
-namespace polymer.specs.ravendb.for_DataContext
+namespace polymer.tests.ravendb.for_DataContext
 {
 	public class when_creating_a_context
 	{

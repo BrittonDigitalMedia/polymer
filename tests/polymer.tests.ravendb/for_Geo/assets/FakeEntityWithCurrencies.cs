@@ -2,7 +2,7 @@
 using Geo.Geometries;
 using polymer.core.Domain;
 
-namespace polymer.specs.ravendb.for_Geo.assets
+namespace polymer.tests.ravendb.for_Geo.assets
 {
 	public class FakeEntityWithGeoProperties : IEntity
 	{

@@ -1,5 +1,5 @@
 ﻿
-namespace polymer.specs.ravendb._assets
+namespace polymer.tests.ravendb._assets
 {
 	public class TestClass
 	{

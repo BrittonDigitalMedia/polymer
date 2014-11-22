@@ -1,7 +1,7 @@
 ﻿using Machine.Specifications;
-using polymer.specs.core.Commanding.assets;
+using polymer.tests.core.Commanding.assets;
 
-namespace polymer.specs.core.Commanding.for_CommandHandler.given
+namespace polymer.tests.core.Commanding.for_CommandHandler.given
 {
 	public class a_command_handler
 	{

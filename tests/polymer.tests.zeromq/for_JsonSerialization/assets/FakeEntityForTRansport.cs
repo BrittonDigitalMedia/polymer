@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using polymer.core.Domain;
 
-namespace polymer.specs.zeromq.for_JsonSerialization.assets
+namespace polymer.tests.zeromq.for_JsonSerialization.assets
 {
 	public class FakeEntityForTransport : IEntity
 	{

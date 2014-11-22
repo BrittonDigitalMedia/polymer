@@ -7,7 +7,7 @@ using Raven.Client.Extensions;
 using Raven.Database.Config;
 using Raven.Database.Server;
 
-namespace polymer.specs.ravendb.for_NMoneys.given
+namespace polymer.tests.ravendb.for_NMoneys.given
 {
 	public class a_valid_database_context
 	{

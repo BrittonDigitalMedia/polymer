@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Machine.Specifications;
-using polymer.specs.simpleinjector.for_SimpleInjectorContainer.assets;
+using polymer.tests.simpleinjector.for_SimpleInjectorContainer.assets;
 
-namespace polymer.specs.simpleinjector.for_SimpleInjectorContainer
+namespace polymer.tests.simpleinjector.for_SimpleInjectorContainer
 {
 	public class when_scanning_for_implementations_of_an_interface : given.a_composed_container
 	{

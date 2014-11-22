@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{5037F580-1EAB-446D-BA79-DDAEB47E4337}"
 EndProject
@@ -40,6 +40,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.simpleinjector", "..\tests\polymer.tests.simpleinjector\polymer.tests.simpleinjector.csproj", "{593F9A51-3859-467A-8233-197C32AAD1D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.zeromq", "..\tests\polymer.tests.zeromq\polymer.tests.zeromq.csproj", "{3BBC961E-AB5E-4027-8322-31152E4E8404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.redis", "polymer.tests.redis\polymer.tests.redis.csproj", "{313AEEB6-045A-46E1-AFF4-1412D9656CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.api.servicestack.simpleinjector", "polymer.api.servicestack.simpleinjector\polymer.api.servicestack.simpleinjector.csproj", "{C36580C3-0D61-4E7C-A93C-11163BB98EE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +99,14 @@ Global
 		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,5 +124,7 @@ Global
 		{5AE29009-3199-4FD4-9552-9E25625E9487} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{593F9A51-3859-467A-8233-197C32AAD1D2} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{3BBC961E-AB5E-4027-8322-31152E4E8404} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{C36580C3-0D61-4E7C-A93C-11163BB98EE3} = {0E0A5253-0036-4360-8266-FC285BDC19CE}
 	EndGlobalSection
 EndGlobal

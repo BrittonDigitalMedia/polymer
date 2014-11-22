@@ -1,8 +1,8 @@
-﻿using Machine.Specifications;
-using polymer.specs.core.Commanding.assets;
-using System;
+﻿using System;
+using Machine.Specifications;
+using polymer.tests.core.Commanding.assets;
 
-namespace polymer.specs.core.Commanding.for_CommandHandler
+namespace polymer.tests.core.Commanding.for_CommandHandler
 {
 	public class when_executing_a_valid_command : given.a_command_handler
 	{

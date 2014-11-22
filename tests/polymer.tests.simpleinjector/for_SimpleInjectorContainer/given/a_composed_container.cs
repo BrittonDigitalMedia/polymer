@@ -3,7 +3,7 @@ using polymer.composition.simpleinjector;
 using polymer.core.Composition;
 using SimpleInjector;
 
-namespace polymer.specs.simpleinjector.for_SimpleInjectorContainer.given
+namespace polymer.tests.simpleinjector.for_SimpleInjectorContainer.given
 {
 	public class a_composed_container
 	{

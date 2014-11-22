@@ -1,4 +1,4 @@
-﻿namespace polymer.specs.simpleinjector.for_SimpleInjectorContainer.assets
+﻿namespace polymer.tests.simpleinjector.for_SimpleInjectorContainer.assets
 {
 	public class MultiImplementation1 : IMuliImplInterface
 	{

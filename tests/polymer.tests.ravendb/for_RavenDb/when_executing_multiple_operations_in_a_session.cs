@@ -1,8 +1,8 @@
 using System;
 using Machine.Specifications;
-using polymer.specs.ravendb.for_RavenDb.assets;
+using polymer.tests.ravendb.for_RavenDb.assets;
 
-namespace polymer.specs.ravendb.for_RavenDb
+namespace polymer.tests.ravendb.for_RavenDb
 {
 	public class when_executing_multiple_operations_in_a_session : given.a_valid_database_context
 	{

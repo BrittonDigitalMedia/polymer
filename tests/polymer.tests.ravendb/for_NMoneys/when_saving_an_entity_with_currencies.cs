@@ -1,10 +1,10 @@
-﻿using Machine.Specifications;
+﻿using System;
+using Machine.Specifications;
 using NMoneys;
-using polymer.specs.ravendb.for_NMoneys.assets;
-using polymer.specs.ravendb.for_Units.Net.given;
-using System;
+using polymer.tests.ravendb.for_NMoneys.assets;
+using polymer.tests.ravendb.for_Units.Net.given;
 
-namespace polymer.specs.ravendb.for_NMoneys
+namespace polymer.tests.ravendb.for_NMoneys
 {
 	public class when_saving_an_entity_with_currencies : a_valid_database_context
 	{

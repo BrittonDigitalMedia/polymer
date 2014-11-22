@@ -1,12 +1,12 @@
-﻿using Machine.Specifications;
+﻿using System;
+using Machine.Specifications;
 using Moq;
 using polymer.core.Commanding.Logging;
 using polymer.core.Logging;
 using polymer.core.Security;
-using polymer.specs.core.Commanding.assets;
-using System;
+using polymer.tests.core.Commanding.assets;
 
-namespace polymer.specs.core.Commanding.Logging.for_CommandHandlerLoggingDecorator.given
+namespace polymer.tests.core.Commanding.Logging.for_CommandHandlerLoggingDecorator.given
 {
 	public class a_command_logging_record_decorator
 	{

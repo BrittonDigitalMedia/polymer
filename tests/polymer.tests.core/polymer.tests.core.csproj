@@ -69,7 +69,7 @@
   <ItemGroup>
     <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\given\a_command_logging_record_decorator.cs" />
     <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\when_an_error_occurs_in_a_handler.cs" />
-    <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\when_executing_a_command_through_a_decorator.cs" />
+    <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\when_executing_a_command_using_a_decoratorated_handler.cs" />
     <Compile Include="Commanding\assets\FakeCommand.cs" />
     <Compile Include="Commanding\assets\FakeCommandHandler.cs" />
     <Compile Include="Commanding\assets\FakeCommandResult.cs" />

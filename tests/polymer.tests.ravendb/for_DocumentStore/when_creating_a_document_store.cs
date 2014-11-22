@@ -2,7 +2,7 @@
 using Raven.Client.Embedded;
 using Raven.Database.Config;
 
-namespace polymer.specs.ravendb.for_DocumentStore
+namespace polymer.tests.ravendb.for_DocumentStore
 {
 	public class when_creating_a_document_store
 	{

@@ -3,10 +3,10 @@ using Machine.Specifications;
 using Moq;
 using polymer.core.Commanding;
 using polymer.core.Commanding.Logging;
-using polymer.specs.core.Commanding.assets;
+using polymer.tests.core.Commanding.assets;
 using It = Machine.Specifications.It;
 
-namespace polymer.specs.core.Commanding.Logging.for_CommandHandlerLoggingDecorator
+namespace polymer.tests.core.Commanding.Logging.for_CommandHandlerLoggingDecorator
 {
 	public class when_an_error_occurs_in_a_handler : given.a_command_logging_record_decorator
 	{

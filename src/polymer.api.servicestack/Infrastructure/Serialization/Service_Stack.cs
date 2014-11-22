@@ -1,8 +1,9 @@
 ﻿using System.Globalization;
 using System.Linq;
+using NMoneys;
 using ServiceStack.Text;
 
-namespace NMoneys.Serialization.Service_Stack
+namespace polymer.api.servicestack.Infrastructure.Serialization
 {
 	#region serialization/deserialization functions
 

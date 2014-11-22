@@ -6,7 +6,7 @@ using Raven.Client.Embedded;
 using Raven.Client.Extensions;
 using Raven.Database.Config;
 
-namespace polymer.specs.ravendb.for_RavenDb.given
+namespace polymer.tests.ravendb.for_RavenDb.given
 {
 	public class a_valid_database_context
 	{

@@ -1,8 +1,8 @@
-﻿using NMoneys;
+﻿using System;
+using NMoneys;
 using polymer.core.Domain;
-using System;
 
-namespace polymer.specs.ravendb.for_NMoneys.assets
+namespace polymer.tests.ravendb.for_NMoneys.assets
 {
 	public class FakeEntityWithCurrencies : IEntity
 	{

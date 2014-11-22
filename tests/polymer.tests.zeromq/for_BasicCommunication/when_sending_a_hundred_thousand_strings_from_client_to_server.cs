@@ -3,7 +3,7 @@ using System.Diagnostics;
 using Machine.Specifications;
 using NetMQ;
 
-namespace polymer.specs.zeromq.for_BasicCommunication
+namespace polymer.tests.zeromq.for_BasicCommunication
 {
 	public class when_sending_a_hundred_thousand_strings_from_client_to_server
 	{

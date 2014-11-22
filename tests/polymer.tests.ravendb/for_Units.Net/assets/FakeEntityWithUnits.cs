@@ -1,9 +1,9 @@
-﻿using polymer.core.Domain;
-using System;
+﻿using System;
+using polymer.core.Domain;
 using UnitsNet;
 using UnitsNet.Units;
 
-namespace polymer.specs.ravendb.for_Units.Net.assets
+namespace polymer.tests.ravendb.for_Units.Net.assets
 {
 	public class FakeEntityWithUnits : IEntity
 	{

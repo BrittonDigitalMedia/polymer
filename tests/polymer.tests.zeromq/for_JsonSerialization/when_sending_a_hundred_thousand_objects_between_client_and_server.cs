@@ -1,12 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Machine.Specifications;
 using NetMQ;
-using polymer.specs.zeromq.for_JsonSerialization.assets;
+using polymer.tests.zeromq.for_JsonSerialization.assets;
 using ServiceStack;
-using System;
-using System.Collections.Generic;
 
-namespace polymer.specs.zeromq.for_JsonSerialization
+namespace polymer.tests.zeromq.for_JsonSerialization
 {
 	public class when_sending_a_hundred_thousand_objects_between_client_and_server
 	{

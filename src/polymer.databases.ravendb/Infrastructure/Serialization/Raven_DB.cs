@@ -1,10 +1,11 @@
 using System;
 using System.Linq;
+using NMoneys;
 using Raven.Imports.Newtonsoft.Json;
 using Raven.Imports.Newtonsoft.Json.Linq;
 using Raven.Imports.Newtonsoft.Json.Serialization;
 
-namespace NMoneys.Serialization.Raven_DB
+namespace polymer.databases.ravendb.Infrastructure.Serialization
 {
 	#region converters
 

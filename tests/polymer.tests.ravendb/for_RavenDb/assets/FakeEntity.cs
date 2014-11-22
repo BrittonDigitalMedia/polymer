@@ -1,7 +1,7 @@
-﻿using polymer.core.Domain;
-using System;
+﻿using System;
+using polymer.core.Domain;
 
-namespace polymer.specs.ravendb.for_RavenDb.assets
+namespace polymer.tests.ravendb.for_RavenDb.assets
 {
 	public class FakeEntity : IEntity
 	{

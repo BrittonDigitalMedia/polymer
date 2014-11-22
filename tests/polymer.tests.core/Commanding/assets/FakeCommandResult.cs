@@ -1,7 +1,7 @@
-﻿using polymer.core.Commanding;
-using System;
+﻿using System;
+using polymer.core.Commanding;
 
-namespace polymer.specs.core.Commanding.assets
+namespace polymer.tests.core.Commanding.assets
 {
 	public class FakeCommandResult : ICommandResult
 	{

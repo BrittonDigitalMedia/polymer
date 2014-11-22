@@ -1,11 +1,14 @@
 ﻿using Funq;
 using NMoneys;
-using NMoneys.Serialization.Service_Stack;
 using NodaTime;
 using NodaTime.Serialization.ServiceStackText;
+using polymer.api.servicestack.Infrastructure.Serialization;
 using ServiceStack;
-using System.Reflection;
+using ServiceStack.Configuration;
+using ServiceStack.Redis;
 using ServiceStack.Text;
+using System;
+using System.Reflection;
 
 namespace polymer.api.servicestack
 {
@@ -35,6 +38,10 @@ namespace polymer.api.servicestack
 		{
 			SetupNodaTime();
 			SetUpNMoney();
+
+			Plugins.Add(new ServerEventsFeature());
+			SetupRedis(container);
+
 		}
 
 		private static void SetupNodaTime()
@@ -46,6 +53,34 @@ namespace polymer.api.servicestack
 		{
 			JsConfig<Money>.DeSerializeFn = DefaultMoneySerializer.Deserialize;
 			JsConfig<Money>.SerializeFn = DefaultMoneySerializer.Serialize;
+		}
+
+		private void SetupRedis(Container container)
+		{
+			var appSettings = new AppSettings();
+			var connectionString = string.Format("{0}:{1}", appSettings.Get("Redis.Host"), appSettings.Get("Redis.Port"));
+			container.Register<IRedisClientsManager>(c => new RedisManagerPool(connectionString));
+			var clientsManager = container.Resolve<IRedisClientsManager>();
+
+			using (IRedisClient redis = clientsManager.GetClient())
+			{
+				try
+				{
+					redis.Set("test", true);
+					container.Register<IServerEvents>(c => new RedisServerEvents(container.Resolve<IRedisClientsManager>()));
+
+				}
+				catch (Exception)
+				{
+					container.Register<IServerEvents>(c => new MemoryServerEvents());
+				}
+				finally
+				{
+
+					container.Resolve<IServerEvents>().Start();
+				}
+
+			}
 		}
 	}
 }

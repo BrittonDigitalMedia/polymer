@@ -1,10 +1,10 @@
-﻿using Machine.Specifications;
-using polymer.specs.ravendb.for_Units.Net.assets;
-using System;
+﻿using System;
+using Machine.Specifications;
+using polymer.tests.ravendb.for_Units.Net.assets;
 using UnitsNet;
 using UnitsNet.Units;
 
-namespace polymer.specs.ravendb.for_Units.Net
+namespace polymer.tests.ravendb.for_Units.Net
 {
 	public class when_saving_an_entity_with_units : given.a_valid_database_context
 	{

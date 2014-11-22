@@ -1,10 +1,10 @@
 ﻿using Machine.Specifications;
-using polymer.specs.ravendb._assets;
+using polymer.tests.ravendb._assets;
 using Raven.Client.Embedded;
 using Raven.Client.Extensions;
 using Raven.Database.Config;
 
-namespace polymer.specs.ravendb.for_Session.given
+namespace polymer.tests.ravendb.for_Session.given
 {
 	public class a_document_store
 	{
