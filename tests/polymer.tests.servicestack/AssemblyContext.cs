@@ -1,8 +1,8 @@
-﻿using Machine.Specifications;
+﻿using System;
+using Machine.Specifications;
 using RedisIntegration;
-using System;
 
-namespace polymer.tests.redis
+namespace polymer.tests.servicestack
 {
 	public class AssemblyContext : IAssemblyContext
 	{
@@ -10,7 +10,7 @@ namespace polymer.tests.redis
 
 		public void OnAssemblyStart()
 		{
-			_connectionInfo = RedisIntegration.HostManager.RunInstance(1235);
+			_connectionInfo = HostManager.RunInstance(1235);
 		}
 
 		public void OnAssemblyComplete()

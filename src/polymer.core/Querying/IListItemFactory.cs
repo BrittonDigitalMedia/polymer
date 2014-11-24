@@ -1,6 +1,6 @@
-﻿using mosaic.core.contracts.Domain;
+﻿using polymer.core.Domain;
 
-namespace mosaic.core.contracts.Querying
+namespace polymer.core.Querying
 {
     public interface IListItemFactory<TEntity> where TEntity : IEntity
     {

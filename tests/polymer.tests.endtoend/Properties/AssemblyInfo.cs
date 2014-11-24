@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("polymer.tests.breezedb")]
+[assembly: AssemblyTitle("polymer.tests.endtoend")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("polymer.tests.breezedb")]
+[assembly: AssemblyProduct("polymer.tests.endtoend")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f4cdd6b7-ffb1-4bce-9a87-4890b23d8563")]
+[assembly: Guid("05431247-ac4e-4739-887a-ce107f89eff4")]
 
 // Version information for an assembly consists of the following four values:
 //

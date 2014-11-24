@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,6 +93,18 @@
     <Compile Include="Persistence\IPersistenceManager.cs" />
     <Compile Include="Persistence\IPersistenceManagerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Querying\IGridItem.cs" />
+    <Compile Include="Querying\IListItem.cs" />
+    <Compile Include="Querying\IListItemFactory.cs" />
+    <Compile Include="Querying\IListItemFactoryProvider.cs" />
+    <Compile Include="Querying\IMultipleResultQuerySpecification.cs" />
+    <Compile Include="Querying\IQueryHandlerWithResult.cs" />
+    <Compile Include="Querying\IQueryHandlerWithResults.cs" />
+    <Compile Include="Querying\IQueryResult.cs" />
+    <Compile Include="Querying\IQueryResults.cs" />
+    <Compile Include="Querying\IResultItem.cs" />
+    <Compile Include="Querying\ISingleResultQuerySpecification.cs" />
+    <Compile Include="Querying\ListItem.cs" />
     <Compile Include="Security\IUserSession.cs" />
   </ItemGroup>
   <ItemGroup>
