@@ -1,7 +1,7 @@
 ﻿using polymer.core.Domain;
-using polymer.tests.endtoend.Module.DomainObjects;
+using polymer.tests.testmodule.DomainObjects;
 
-namespace polymer.tests.endtoend.Module.EntityFactories
+namespace polymer.tests.testmodule.EntityFactories
 {
 	public class OrganisationFactory : IEntityFactory<Organisation>
 	{

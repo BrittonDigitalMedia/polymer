@@ -1,6 +1,6 @@
 ﻿using polymer.core.Querying;
 
-namespace polymer.tests.endtoend.Module.QueryResultItems
+namespace polymer.tests.testmodule.QueryResultItems
 {
 	public class OrganisationGridItem: IGridItem
 	{

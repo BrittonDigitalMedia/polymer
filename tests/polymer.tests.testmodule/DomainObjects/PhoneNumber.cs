@@ -1,6 +1,6 @@
 ﻿using polymer.core.Domain;
 
-namespace polymer.tests.endtoend.Module.DomainObjects
+namespace polymer.tests.testmodule.DomainObjects
 {
 	public class PhoneNumber : IValueObject
 	{

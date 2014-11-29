@@ -97,7 +97,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\polymer.core\polymer.core.csproj">
+    <ProjectReference Include="..\..\src\polymer.core\polymer.core.csproj">
       <Project>{29E865AA-519B-48F3-8078-3CBEC279E546}</Project>
       <Name>polymer.core</Name>
     </ProjectReference>

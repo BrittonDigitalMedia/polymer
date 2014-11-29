@@ -62,13 +62,12 @@ namespace polymer.api.servicestack
 			container.Register<IRedisClientsManager>(c => new RedisManagerPool(connectionString));
 			var clientsManager = container.Resolve<IRedisClientsManager>();
 
-			using (IRedisClient redis = clientsManager.GetClient())
+			using (var redis = clientsManager.GetClient())
 			{
 				try
 				{
 					redis.Set("test", true);
 					container.Register<IServerEvents>(c => new RedisServerEvents(container.Resolve<IRedisClientsManager>()));
-
 				}
 				catch (Exception)
 				{
@@ -76,7 +75,6 @@ namespace polymer.api.servicestack
 				}
 				finally
 				{
-
 					container.Resolve<IServerEvents>().Start();
 				}
 

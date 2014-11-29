@@ -67,15 +67,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Module\1 - Core\Commands\AddOrganisation.cs" />
-    <Compile Include="Module\1 - Core\Commands\DeleteOrganisation.cs" />
-    <Compile Include="Module\1 - Core\Commands\UpdateOrganisation.cs" />
-    <Compile Include="Module\1 - Core\DomainObjects\Employee.cs" />
-    <Compile Include="Module\1 - Core\DomainObjects\Organisation.cs" />
-    <Compile Include="Module\1 - Core\DomainObjects\PhoneNumber.cs" />
-    <Compile Include="Module\1 - Core\EntityFactories\EmployeeFactory.cs" />
-    <Compile Include="Module\1 - Core\EntityFactories\OrganisationFactory.cs" />
-    <Compile Include="Module\1 - Core\QueryResultItems\OrganisationGridItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,13 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\" />
-    <Folder Include="Module\1 - Core\Events\" />
-    <Folder Include="Module\1 - Core\Notifications\" />
-    <Folder Include="Module\1 - Core\QueryResults\" />
-    <Folder Include="Module\1 - Core\QuerySpecifications\" />
-    <Folder Include="Module\2 - Domain Layer\Logic\" />
-    <Folder Include="Module\3 - Application Layer\" />
-    <Folder Include="Module\4 - Service Layer\" />
     <Folder Include="Tests\" />
   </ItemGroup>
   <ItemGroup>

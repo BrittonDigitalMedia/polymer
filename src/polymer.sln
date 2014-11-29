@@ -41,11 +41,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.simpleinjecto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.zeromq", "..\tests\polymer.tests.zeromq\polymer.tests.zeromq.csproj", "{3BBC961E-AB5E-4027-8322-31152E4E8404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.redis", "polymer.tests.redis\polymer.tests.redis.csproj", "{313AEEB6-045A-46E1-AFF4-1412D9656CFF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.api.servicestack.simpleinjector", "polymer.api.servicestack.simpleinjector\polymer.api.servicestack.simpleinjector.csproj", "{C36580C3-0D61-4E7C-A93C-11163BB98EE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.endtoend", "..\tests\polymer.tests.endtoend\polymer.tests.endtoend.csproj", "{EA776148-8402-44B0-B813-6D4DBF1C7A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.redis", "..\tests\polymer.tests.redis\polymer.tests.redis.csproj", "{313AEEB6-045A-46E1-AFF4-1412D9656CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.testmodule", "..\tests\polymer.tests.testmodule\polymer.tests.testmodule.csproj", "{94074B42-10C7-4622-8072-5322F8A7E66F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,10 +103,6 @@ Global
 		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBC961E-AB5E-4027-8322-31152E4E8404}.Release|Any CPU.Build.0 = Release|Any CPU
-		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C36580C3-0D61-4E7C-A93C-11163BB98EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -113,6 +111,14 @@ Global
 		{EA776148-8402-44B0-B813-6D4DBF1C7A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA776148-8402-44B0-B813-6D4DBF1C7A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA776148-8402-44B0-B813-6D4DBF1C7A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94074B42-10C7-4622-8072-5322F8A7E66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94074B42-10C7-4622-8072-5322F8A7E66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94074B42-10C7-4622-8072-5322F8A7E66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94074B42-10C7-4622-8072-5322F8A7E66F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,8 +136,9 @@ Global
 		{5AE29009-3199-4FD4-9552-9E25625E9487} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{593F9A51-3859-467A-8233-197C32AAD1D2} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{3BBC961E-AB5E-4027-8322-31152E4E8404} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
-		{313AEEB6-045A-46E1-AFF4-1412D9656CFF} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{C36580C3-0D61-4E7C-A93C-11163BB98EE3} = {0E0A5253-0036-4360-8266-FC285BDC19CE}
 		{EA776148-8402-44B0-B813-6D4DBF1C7A07} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{313AEEB6-045A-46E1-AFF4-1412D9656CFF} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{94074B42-10C7-4622-8072-5322F8A7E66F} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 	EndGlobalSection
 EndGlobal
