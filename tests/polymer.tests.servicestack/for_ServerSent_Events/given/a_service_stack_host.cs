@@ -4,6 +4,7 @@ using polymer.api.servicestack;
 using polymer.api.servicestack.simpleinjector;
 using polymer.tests.servicestack.for_ServerSent_Events.assets;
 using ServiceStack;
+using ServiceStack.Redis;
 
 namespace polymer.tests.servicestack.for_ServerSent_Events.given
 {
@@ -12,7 +13,14 @@ namespace polymer.tests.servicestack.for_ServerSent_Events.given
 		Establish context = () =>
 		{
 			var container = new SimpleInjector.Container();
-			_appHost = new PolymerAppHost("Polymer API", typeof(FakeSseService).Assembly).Init(); ;
+			_appHost = new PolymerAppHost("Polymer API", typeof(FakeSseService).Assembly).Init();
+			var cm = _appHost.TryResolve<IRedisClientsManager>();
+			using (var c = cm.GetClient())
+			{
+				c.FlushAll();
+			}
+			var se = _appHost.TryResolve<IServerEvents>();
+			se.Reset();
 			_appHost.Container.Adapter = new SimpleInjectorContainerAdapter(container);
 			_container = _appHost.Container;
 			_appHost.Start("http://localhost:54321/");

@@ -9,12 +9,12 @@ namespace polymer.tests.servicestack.for_ServerSent_Events.assets
 		public FakeSseService(IServerEvents serverEvents)
 		{
 			_serverEvents = serverEvents;
-			_serverEvents.Start();
 		}
 
 		public FakeSseResponse Any(FakeSseRequest sseRequest)
 		{
-			_serverEvents.NotifyChannel("test", null, "testing");
+			
+			_serverEvents.NotifyChannel("test", "testMessage");
 			return new FakeSseResponse { TestProperty = sseRequest.TestProperty };
 		}
 	}

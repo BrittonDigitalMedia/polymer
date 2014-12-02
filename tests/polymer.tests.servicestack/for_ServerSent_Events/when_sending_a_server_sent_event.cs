@@ -1,10 +1,10 @@
-﻿using Machine.Specifications;
+﻿using System.Threading;
+using Machine.Specifications;
 using polymer.tests.servicestack.for_ServerSent_Events.assets;
 using ServiceStack;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Threading;
 
 namespace polymer.tests.servicestack.for_ServerSent_Events
 {
@@ -18,7 +18,7 @@ namespace polymer.tests.servicestack.for_ServerSent_Events
 			_commands = new List<ServerEventMessage>();
 			_errors = new List<Exception>();
 
-			_eventListener = new ServerEventsClient("http://localhost:54321/event-stream", "test")
+			_eventListener = new ServerEventsClient("http://localhost:54321", channel: "test")
 			{
 				OnConnect = e => connectMsg = e,
 				OnCommand = _commands.Add,
@@ -30,8 +30,14 @@ namespace polymer.tests.servicestack.for_ServerSent_Events
 		Because of = () =>
 		{
 			_sseResponse = _client.Post(_sseRequest);
-			_eventListener.WaitForNextMessage();
-			Thread.Sleep(100);
+			Thread.Sleep(1000);
+
+		};
+
+		private Cleanup cu = () =>
+		{
+			_eventListener.Stop();
+			_eventListener.Dispose();
 		};
 
 		It should_return_a_response = () => _sseResponse.ShouldNotBeNull();

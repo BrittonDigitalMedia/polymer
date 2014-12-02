@@ -39,6 +39,7 @@ namespace polymer.tests.servicestack.for_ServerSent_Events
 		};
 
 		It should_receive_server_sent_event = () => _msgs.Count.ShouldEqual(1000);
+		It should_happen_in_under_3_seconds = () => _stopWatch.ElapsedMilliseconds.ShouldBeLessThan(3000);
 
 		private static FakeSseRequest _sseRequest;
 		private static FakeSseResponse _sseResponse;

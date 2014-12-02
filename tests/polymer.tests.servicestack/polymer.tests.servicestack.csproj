@@ -67,9 +67,6 @@
     <Reference Include="NodaTime.Serialization.ServiceStackText">
       <HintPath>..\..\src\packages\NodaTime.Serialization.ServiceStackText.1.2.17\lib\net35-Client\NodaTime.Serialization.ServiceStackText.dll</HintPath>
     </Reference>
-    <Reference Include="RedisIntegration">
-      <HintPath>..\..\src\packages\RedisIntegration.0.3.0.0\lib\net40\RedisIntegration.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceStack, Version=4.0.33.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\src\packages\ServiceStack.4.0.33\lib\net40\ServiceStack.dll</HintPath>
@@ -113,7 +110,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AssemblyContext.cs" />
     <Compile Include="for_Basic_Service_Interactions\assets\FakeRequest.cs" />
     <Compile Include="for_Basic_Service_Interactions\assets\FakeResponse.cs" />
     <Compile Include="for_Basic_Service_Interactions\assets\FakeService.cs" />
@@ -130,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="for_NodaTime\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

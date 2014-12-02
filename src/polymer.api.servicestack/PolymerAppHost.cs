@@ -39,7 +39,7 @@ namespace polymer.api.servicestack
 			SetupNodaTime();
 			SetUpNMoney();
 
-			Plugins.Add(new ServerEventsFeature());
+			
 			SetupRedis(container);
 
 		}
@@ -59,26 +59,12 @@ namespace polymer.api.servicestack
 		{
 			var appSettings = new AppSettings();
 			var connectionString = string.Format("{0}:{1}", appSettings.Get("Redis.Host"), appSettings.Get("Redis.Port"));
-			container.Register<IRedisClientsManager>(c => new RedisManagerPool(connectionString));
-			var clientsManager = container.Resolve<IRedisClientsManager>();
+			Plugins.Add(new ServerEventsFeature());
+			container.Register<IRedisClientsManager>(c => new PooledRedisClientManager(connectionString));
+			container.Register<IServerEvents>(c => new RedisServerEvents(container.Resolve<IRedisClientsManager>()));
+			container.Resolve<IServerEvents>().Start();
 
-			using (var redis = clientsManager.GetClient())
-			{
-				try
-				{
-					redis.Set("test", true);
-					container.Register<IServerEvents>(c => new RedisServerEvents(container.Resolve<IRedisClientsManager>()));
-				}
-				catch (Exception)
-				{
-					container.Register<IServerEvents>(c => new MemoryServerEvents());
-				}
-				finally
-				{
-					container.Resolve<IServerEvents>().Start();
-				}
-
-			}
+			
 		}
 	}
 }
