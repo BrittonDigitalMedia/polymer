@@ -64,7 +64,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\Serialization\Raven_DB.cs" />
+    <Compile Include="Serialization\Nmoneys\CanonicalMoneyReader.cs" />
+    <Compile Include="Serialization\Nmoneys\CanonicalMoneyWriter.cs" />
+    <Compile Include="Serialization\Nmoneys\CurrencyLessMoneyConverter.cs" />
+    <Compile Include="Serialization\Nmoneys\CurrencyLessMoneyReader.cs" />
+    <Compile Include="Serialization\Nmoneys\CurrencyStyle.cs" />
+    <Compile Include="Serialization\Nmoneys\CurrencyStyleReadExtensions.cs" />
+    <Compile Include="Serialization\Nmoneys\CurrencyStyleWriteExtensions.cs" />
+    <Compile Include="Serialization\Nmoneys\DefaultMoneyConverter.cs" />
+    <Compile Include="Serialization\Nmoneys\DefaultMoneyReader.cs" />
+    <Compile Include="Serialization\Nmoneys\DefaultMoneyWriter.cs" />
+    <Compile Include="Serialization\Nmoneys\IMoneyReader.cs" />
+    <Compile Include="Serialization\Nmoneys\IMoneyWriter.cs" />
+    <Compile Include="Serialization\Nmoneys\MoneyOperator.cs" />
+    <Compile Include="Serialization\Nmoneys\MoneyWriter.cs" />
+    <Compile Include="Serialization\Nmoneys\CanonicalMoneyConverter.cs" />
     <Compile Include="RavenDbEmbeddedDatabaseContext.cs" />
     <Compile Include="IRavenDbDatabaseContext.cs" />
     <Compile Include="IRavenDbDatabaseJob.cs" />

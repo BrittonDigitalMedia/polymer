@@ -23,6 +23,7 @@ namespace polymer.core.Commanding.Logging
 		public string UniqueCode { get; private set; }
 		public string CommandName { get; private set; }
 
+		/// <exception cref="CommandException">thrown when an error occurs while processing a command</exception>
 		public ICommandResult Handle(ICommand command)
 		{
 			var commandLogRecord = new CommandLogRecord(LogLevel.Internal, LogType.System, string.Format("executed command {0}", CommandName), UniqueCode, _userSession);
@@ -35,7 +36,7 @@ namespace polymer.core.Commanding.Logging
 			catch (Exception ex)
 			{
 				_logger.LogError(commandLogRecord);
-				throw new CommandException(command, CommandName, command.UniqueMessageReference, ex);
+				throw new CommandException(command, CommandName, ex);
 			}
 		}
 	}

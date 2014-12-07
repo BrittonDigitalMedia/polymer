@@ -1,6 +1,6 @@
 ﻿using Geo.Raven;
 using polymer.core.Database;
-using polymer.databases.ravendb.Infrastructure.Serialization;
+using polymer.databases.ravendb.Serialization.Nmoneys;
 using Raven.Client;
 
 namespace polymer.databases.ravendb
