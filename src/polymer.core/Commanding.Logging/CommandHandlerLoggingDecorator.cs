@@ -35,7 +35,7 @@ namespace polymer.core.Commanding.Logging
 			catch (Exception ex)
 			{
 				_logger.LogError(commandLogRecord);
-				throw new CommandException(command, CommandName, command.Key, ex);
+				throw new CommandException(command, CommandName, command.UniqueMessageReference, ex);
 			}
 		}
 	}

@@ -3,7 +3,7 @@ using polymer.core.Domain;
 
 namespace polymer.core.Persistence
 {
-    public interface IPersistenceManager
+    public interface INoSqlPersistenceManager
     {
         void Store<TEntity>(TEntity entity) where TEntity : IEntity;
         void Store<TEntity>(params TEntity[] entities) where TEntity : IEntity;

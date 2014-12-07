@@ -90,8 +90,9 @@
     <Compile Include="Orchestration\IWorker.cs" />
     <Compile Include="Orchestration\Node.cs" />
     <Compile Include="Orchestration\NodeType.cs" />
-    <Compile Include="Persistence\IPersistenceManager.cs" />
-    <Compile Include="Persistence\IPersistenceManagerProvider.cs" />
+    <Compile Include="Persistence\IKeyValueStorePersistenceManager.cs" />
+    <Compile Include="Persistence\INoSqlPersistenceManager.cs" />
+    <Compile Include="Persistence\INoSqlPersistenceManagerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Querying\IGridItem.cs" />
     <Compile Include="Querying\IListItem.cs" />

@@ -11,6 +11,8 @@
     <AssemblyName>polymer.tests.testmodule</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\src\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,8 +32,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NodaTime, Version=1.3.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\packages\NodaTime.1.3.0\lib\net35-Client\NodaTime.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\src\packages\ServiceStack.Interfaces.4.0.33\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,11 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\AddOrganisation.cs" />
+    <Compile Include="Commands\CreateOrganisation.cs" />
     <Compile Include="Commands\DeleteOrganisation.cs" />
+    <Compile Include="Commands\GetOrganisation.cs" />
     <Compile Include="Commands\UpdateOrganisation.cs" />
-    <Compile Include="DomainFactories\EmployeeFactory.cs" />
     <Compile Include="DomainFactories\OrganisationFactory.cs" />
+    <Compile Include="DomainLogic\AddOrganisationLogic.cs" />
     <Compile Include="DomainObjects\Employee.cs" />
     <Compile Include="DomainObjects\Organisation.cs" />
     <Compile Include="DomainObjects\PhoneNumber.cs" />
@@ -51,7 +62,7 @@
     <Compile Include="QueryResultItems\OrganisationGridItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DomainLogic\" />
+    <Folder Include="Events\" />
     <Folder Include="Notifications\" />
     <Folder Include="QueryResults\" />
     <Folder Include="QuerySpecifications\" />
@@ -66,8 +77,22 @@
       <Project>{29E865AA-519B-48F3-8078-3CBEC279E546}</Project>
       <Name>polymer.core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\polymer.tests.testmodule.contracts\polymer.tests.testmodule.contracts.csproj">
+      <Project>{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}</Project>
+      <Name>polymer.tests.testmodule.contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

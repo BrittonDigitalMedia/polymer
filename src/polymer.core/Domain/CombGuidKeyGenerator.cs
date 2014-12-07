@@ -1,4 +1,5 @@
-﻿using System;
+﻿using polymer.core.Guids;
+using System;
 
 namespace polymer.core.Domain
 {
@@ -6,7 +7,7 @@ namespace polymer.core.Domain
 	{
 		public Guid NewKey()
 		{
-			return Guid.NewGuid();
+			return SequentialGuid.Create();
 		}
 	}
 }

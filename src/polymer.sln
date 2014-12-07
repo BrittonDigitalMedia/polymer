@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{5037F580-1EAB-446D-BA79-DDAEB47E4337}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. core", "1. core", "{5037F580-1EAB-446D-BA79-DDAEB47E4337}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{0E0A5253-0036-4360-8266-FC285BDC19CE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. infrastructure", "2. infrastructure", "{0E0A5253-0036-4360-8266-FC285BDC19CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.core", "polymer.core\polymer.core.csproj", "{29E865AA-519B-48F3-8078-3CBEC279E546}"
 EndProject
@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7102C9
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BEAC2DD0-A97D-48D6-8480-4ECE473915DA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. tests", "4. tests", "{BEAC2DD0-A97D-48D6-8480-4ECE473915DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.databases.ravendb", "polymer.databases.ravendb\polymer.databases.ravendb.csproj", "{7429DAF9-30A3-41C7-A306-37CB236D0131}"
 EndProject
@@ -48,6 +48,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.redis", "..\tests\polymer.tests.redis\polymer.tests.redis.csproj", "{313AEEB6-045A-46E1-AFF4-1412D9656CFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.testmodule", "..\tests\polymer.tests.testmodule\polymer.tests.testmodule.csproj", "{94074B42-10C7-4622-8072-5322F8A7E66F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.testmodule.contracts", "polymer.tests.testmodule.contracts\polymer.tests.testmodule.contracts.csproj", "{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. hosts", "3. hosts", "{C4F19C0E-A333-4223-A77C-2AB44F06A9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.host.api", "polymer.host.api\polymer.host.api.csproj", "{1D875C4D-B410-4C03-9BA8-7DCE9558E0C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +125,14 @@ Global
 		{94074B42-10C7-4622-8072-5322F8A7E66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94074B42-10C7-4622-8072-5322F8A7E66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94074B42-10C7-4622-8072-5322F8A7E66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D875C4D-B410-4C03-9BA8-7DCE9558E0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D875C4D-B410-4C03-9BA8-7DCE9558E0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D875C4D-B410-4C03-9BA8-7DCE9558E0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D875C4D-B410-4C03-9BA8-7DCE9558E0C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,5 +154,7 @@ Global
 		{EA776148-8402-44B0-B813-6D4DBF1C7A07} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{313AEEB6-045A-46E1-AFF4-1412D9656CFF} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
 		{94074B42-10C7-4622-8072-5322F8A7E66F} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{8D782B13-F9DD-4782-8CA3-77C6FECF07A9} = {BEAC2DD0-A97D-48D6-8480-4ECE473915DA}
+		{1D875C4D-B410-4C03-9BA8-7DCE9558E0C9} = {C4F19C0E-A333-4223-A77C-2AB44F06A9B9}
 	EndGlobalSection
 EndGlobal
