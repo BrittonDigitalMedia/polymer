@@ -49,7 +49,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.redis", "..\t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.testmodule", "..\tests\polymer.tests.testmodule\polymer.tests.testmodule.csproj", "{94074B42-10C7-4622-8072-5322F8A7E66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.testmodule.contracts", "polymer.tests.testmodule.contracts\polymer.tests.testmodule.contracts.csproj", "{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymer.tests.testmodule.contracts", "..\tests\polymer.tests.testmodule.contracts\polymer.tests.testmodule.contracts.csproj", "{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. hosts", "3. hosts", "{C4F19C0E-A333-4223-A77C-2AB44F06A9B9}"
 EndProject

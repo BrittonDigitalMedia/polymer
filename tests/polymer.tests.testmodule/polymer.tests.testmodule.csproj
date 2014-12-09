@@ -77,8 +77,8 @@
       <Project>{29E865AA-519B-48F3-8078-3CBEC279E546}</Project>
       <Name>polymer.core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\polymer.tests.testmodule.contracts\polymer.tests.testmodule.contracts.csproj">
-      <Project>{8D782B13-F9DD-4782-8CA3-77C6FECF07A9}</Project>
+    <ProjectReference Include="..\polymer.tests.testmodule.contracts\polymer.tests.testmodule.contracts.csproj">
+      <Project>{8d782b13-f9dd-4782-8ca3-77c6fecf07a9}</Project>
       <Name>polymer.tests.testmodule.contracts</Name>
     </ProjectReference>
   </ItemGroup>
