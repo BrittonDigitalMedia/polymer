@@ -74,9 +74,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\src\packages\NodaTime.1.3.0\lib\net35-Client\NodaTime.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Abstractions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3528\lib\net45\Raven.Abstractions.dll</HintPath>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\..\src\packages\RavenDB.Database.3.0.3528\lib\net45\Raven.Abstractions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Raven.Client.Lightweight, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -86,15 +86,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\src\packages\RavenDB.Client.NodaTime.2.5.9\lib\net40-Client\Raven.Client.NodaTime.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Database, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Raven.Database">
       <HintPath>..\..\src\packages\RavenDB.Database.3.0.3528\lib\net45\Raven.Database.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Server">
-      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3528\lib\net45\Raven.Server.exe</HintPath>
-    </Reference>
-    <Reference Include="Raven.Tests.Helpers">
-      <HintPath>..\..\src\packages\RavenDB.Tests.Helpers.3.0.3528\lib\net45\Raven.Tests.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
