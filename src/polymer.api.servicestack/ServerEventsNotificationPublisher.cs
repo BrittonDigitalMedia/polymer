@@ -12,7 +12,7 @@ namespace polymer.api.servicestack
 			_serverEvents = serverEvents;
 		}
 
-		public void Publish<TEvent>(TEvent thisEvent)
+		public void Publish<TEvent>(TEvent thisEvent) where TEvent : IEvent
 		{
 			_serverEvents.NotifyChannel(typeof(TEvent).Name, thisEvent);
 		}
