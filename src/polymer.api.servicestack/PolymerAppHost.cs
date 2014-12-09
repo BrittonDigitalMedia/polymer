@@ -2,13 +2,13 @@
 using NMoneys;
 using NodaTime;
 using NodaTime.Serialization.ServiceStackText;
-using polymer.api.servicestack.Infrastructure.Serialization;
 using ServiceStack;
 using ServiceStack.Configuration;
 using ServiceStack.Redis;
 using ServiceStack.Text;
 using System;
 using System.Reflection;
+using polymer.api.servicestack.Serialization.NMoneys;
 
 namespace polymer.api.servicestack
 {
