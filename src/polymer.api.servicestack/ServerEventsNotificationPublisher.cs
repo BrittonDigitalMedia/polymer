@@ -1,9 +1,9 @@
-﻿using polymer.core.Events;
+﻿using polymer.core.Notifications;
 using ServiceStack;
 
 namespace polymer.api.servicestack
 {
-	public class ServerEventsNotificationPublisher : IEventPublisher
+	public class ServerEventsNotificationPublisher : INotificationPublisher
 	{
 		private readonly IServerEvents _serverEvents;
 
@@ -12,9 +12,9 @@ namespace polymer.api.servicestack
 			_serverEvents = serverEvents;
 		}
 
-		public void Publish<TEvent>(TEvent thisEvent) where TEvent : IEvent
+		public void Publish(INotification notification)
 		{
-			_serverEvents.NotifyChannel(typeof(TEvent).Name, thisEvent);
+			_serverEvents.NotifyChannel(notification.GetType().Name, notification);
 		}
 	}
 }
