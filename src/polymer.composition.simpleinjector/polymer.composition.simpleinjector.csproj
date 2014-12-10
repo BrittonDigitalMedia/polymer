@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="polymer.composition.simpleinjector.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\polymer.core\polymer.core.csproj">

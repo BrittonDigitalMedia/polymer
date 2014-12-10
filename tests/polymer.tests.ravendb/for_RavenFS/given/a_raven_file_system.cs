@@ -7,7 +7,7 @@ namespace polymer.tests.ravendb.for_RavenFS.given
 {
 	public class a_raven_file_system
 	{
-		Establish context = async () =>
+		Establish context = () =>
 		{
 			_fileStore = new FilesStore() { Url = "http://localhost:8088", DefaultFileSystem = "TST" };
 			_fileStore.Initialize();

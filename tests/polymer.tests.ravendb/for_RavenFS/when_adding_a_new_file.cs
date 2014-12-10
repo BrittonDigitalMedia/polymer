@@ -22,7 +22,7 @@ namespace polymer.tests.ravendb.for_RavenFS
 		};
 
 		It should_pass = () => true.ShouldBeTrue();
-		It should_contain_file_in_database = async () =>
+		It should_contain_file_in_database =  () =>
 		{
 			using (var session = _fileStore.OpenAsyncSession())
 			{

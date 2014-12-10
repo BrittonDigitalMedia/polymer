@@ -91,6 +91,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="polymer.databases.ravendb.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\polymer.core\polymer.core.csproj">
