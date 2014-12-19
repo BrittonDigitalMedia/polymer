@@ -92,6 +92,7 @@
     <Compile Include="Orchestration\IWorker.cs" />
     <Compile Include="Orchestration\Node.cs" />
     <Compile Include="Orchestration\NodeType.cs" />
+    <Compile Include="Persistence\IEntityPersistenceManager.cs" />
     <Compile Include="Persistence\IKeyValueStorePersistenceManager.cs" />
     <Compile Include="Persistence\INoSqlPersistenceManager.cs" />
     <Compile Include="Persistence\INoSqlPersistenceManagerProvider.cs" />

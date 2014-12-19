@@ -14,8 +14,6 @@ namespace polymer.tests.core.Commanding.Logging.for_CommandHandlerLoggingDecorat
 		{
 			_mockHandler = new Mock<ICommandHandler<FakeCommand, FakeCommandResult>>();
 			_mockHandler.Setup(x => x.Handle(Moq.It.IsAny<ICommand>())).Throws<Exception>();
-			_mockHandler.SetupGet(x => x.CommandName).Returns(() => "TEST COMMAND");
-			_mockHandler.SetupGet(x => x.UniqueCode).Returns(() => "TST-CDE");
 			_decorator = new CommandHandlerLoggingDecorator(_mockHandler.Object, _mockUserSession.Object, _mockLogger.Object);
 			_mockLogger.Setup(x => x.LogError(Moq.It.IsAny<CommandLogRecord>())).Verifiable();
 			_command = new FakeCommand { Key = Guid.NewGuid() };

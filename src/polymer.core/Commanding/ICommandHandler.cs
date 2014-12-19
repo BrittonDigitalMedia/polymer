@@ -10,8 +10,6 @@
 
 	public interface ICommandHandler
 	{
-		string UniqueCode { get; }
-		string CommandName { get; }
 		ICommandResult Handle(ICommand command);
 	}
 }
