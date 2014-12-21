@@ -52,7 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commanding.Logging\CommandLogRecord.cs" />
     <Compile Include="Commanding\CommandException.cs" />
     <Compile Include="Commanding\ICommand.cs" />
     <Compile Include="Commanding\ICommandHandler.cs" />
@@ -79,7 +78,6 @@
     <Compile Include="Geospatial\IGeoPoint.cs" />
     <Compile Include="Guids\GuidExtensions.cs" />
     <Compile Include="Guids\SequentialGuid.cs" />
-    <Compile Include="Commanding.Logging\CommandHandlerLoggingDecorator.cs" />
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\ILogRecord.cs" />
     <Compile Include="Logging\LogLevel.cs" />

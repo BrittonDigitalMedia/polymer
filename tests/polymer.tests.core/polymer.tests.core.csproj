@@ -71,9 +71,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\given\a_command_logging_record_decorator.cs" />
-    <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\when_an_error_occurs_in_a_handler.cs" />
-    <Compile Include="Commanding.Logging\for_CommandHandlerLoggingDecorator\when_executing_a_command_using_a_decoratorated_handler.cs" />
     <Compile Include="Commanding\assets\FakeCommand.cs" />
     <Compile Include="Commanding\assets\FakeCommandHandler.cs" />
     <Compile Include="Commanding\assets\FakeCommandResult.cs" />
@@ -81,9 +78,7 @@
     <Compile Include="Commanding\for_CommandHandler\when_executing_a_valid_command.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Commanding.Logging\assets\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\src\polymer.core\polymer.core.csproj">
       <Project>{29E865AA-519B-48F3-8078-3CBEC279E546}</Project>

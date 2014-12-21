@@ -22,9 +22,5 @@ namespace polymer.tests.core.Commanding.assets
 			return new FakeCommandResult {AcknowledgementToken = Guid.NewGuid()};
 		}
 
-		ICommandResult ICommandHandler.Handle(ICommand command)
-		{
-			return Handle(command as FakeCommand);
-		}
 	}
 }
